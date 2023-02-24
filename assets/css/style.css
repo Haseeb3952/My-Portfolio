@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --green: #20c997;
+  --dark: #fafafa;
+}
+
+a {
+  text-decoration: none;
+}
+
+.profile-pic a img {
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
+  border: 6px solid #303238;
+}
+
+.my-name h4 {
+  font-weight: 500;
+}
+
+.nav-links ul li {
+  list-style-type: none;
+  padding: 9px 0px;
+}
+
+.nav-links ul li a {
+  color: var(--dark);
+  transition: 0.4s;
+}
+.nav-links ul li a:hover {
+  color: var(--green);
+}
+
+.side_bar {
+  height: 100vh;
+  overflow: auto;
+  background-color: #131212;
+}
+
+.social a i {
+  color: var(--dark);
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+.fb i:hover {
+  color: #3b5998;
+}
+
+.ig i:hover {
+  color: #f03f33;
+}
+
+.tw i:hover {
+  color: #00acee;
+}
+
+.li i:hover {
+  color: #0a66c2;
+}
+
+.gh i:hover {
+  color: red;
+}
+
+/* Scrollbar Styling */
+/* ::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ebebeb;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #6d6d6d;
+} */
+
+/* Home Section CSS */
