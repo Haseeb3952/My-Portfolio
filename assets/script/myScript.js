@@ -19,3 +19,15 @@ function changeText() {
 
 changeText();
 setInterval(changeText, 1000);
+
+// Number Container
+
+function generateNumbers(start, end) {
+  var container = document.getElementById("number-container");
+
+  for (var i = start; i <= end; i++) {
+    var numberElement = document.createElement("div");
+    numberElement.textContent = i;
+    container.appendChild(numberElement);
+  }
+}

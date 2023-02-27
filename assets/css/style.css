@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0%;
   padding: 0%;
@@ -42,9 +46,9 @@ a {
 }
 
 .side_bar {
-  height: 100vh;
-  overflow: auto;
-  background-color: #131212;
+  min-height: 100vh !important;
+  overflow-y: auto;
+  background-color: #111418;
 }
 
 .social a i {
@@ -74,7 +78,7 @@ a {
 }
 
 /* Scrollbar Styling */
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 5px;
 }
 
@@ -88,7 +92,7 @@ a {
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background: #6d6d6d;
-} */
+}
 
 /* Home Section CSS */
 
@@ -97,15 +101,27 @@ a {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-image: url("/assets/images/hero-bg-3.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(66, 41, 40, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 #text {
   font-weight: 800;
-  font-size: 50px;
+  font-size: 70px;
+  color: var(--white);
 }
 
 .home-location p {
   font-size: 20px;
+  color: var(--white);
 }
 
 .btn-hire-me {
@@ -142,6 +158,11 @@ a {
   left: 40%;
 }
 
+.green-line {
+  visibility: hidden;
+  border-bottom: 2px solid #20c997;
+}
+
 .green-text {
   color: var(--green);
 }
@@ -158,9 +179,21 @@ a {
   color: hsla(0, 0%, 100%, 0.5) !important;
 }
 
+.btn-download-cv {
+  background-color: var(--green);
+  transition: 0.5s;
+}
+
+.btn-download-cv:hover {
+  background-color: #1baa80;
+}
+
 @media screen and (max-width: 767.9px) {
+  .home-section {
+    height: 70vh;
+  }
   #text {
-    font-size: 25px;
+    font-size: 35px;
   }
   .about-me-heading h1 {
     font-size: 60px;
