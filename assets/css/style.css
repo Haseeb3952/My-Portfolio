@@ -154,4 +154,11 @@ a {
   #text {
     font-size: 25px;
   }
+  .about-me-heading h1 {
+    font-size: 60px;
+  }
+  .know-me-more h1 {
+    font-size: 25px;
+    left: 25%;
+  }
 }
