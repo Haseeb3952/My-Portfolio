@@ -101,16 +101,16 @@ a {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url("/assets/images/hero-bg-3.jpeg");
+
+  background: linear-gradient(
+      84deg,
+      rgb(17, 29, 39, 0.35),
+      rgba(10, 98, 221, 0.58)
+    ),
+    url("/assets/images/hero-bg-3.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(66, 41, 40, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  opacity: 0.8;
 }
 
 #text {
@@ -150,12 +150,12 @@ a {
 }
 
 .know-me-more h1 {
-  font-size: 35px;
+  font-size: 45px;
   font-weight: 900;
   color: var(--white);
   position: absolute;
-  bottom: 37%;
-  left: 40%;
+  bottom: 40%;
+  left: 34%;
 }
 
 .green-line {
@@ -188,6 +188,63 @@ a {
   background-color: #1baa80;
 }
 
+/* Services Section CSS */
+
+.services-section {
+  background-color: #343a40;
+  max-height: max-content;
+}
+
+.services-heading h1 {
+  font-size: 120px;
+  font-weight: 900;
+  color: #3e4449;
+  position: relative;
+}
+
+.what-i-do h1 {
+  font-size: 45px;
+  font-weight: 900;
+  color: var(--white);
+  position: absolute;
+  bottom: 37%;
+  left: 39%;
+}
+
+/* Summary Section CSS */
+
+.summary-section {
+  background-color: #212529;
+  max-height: max-content;
+}
+
+.summary-heading h1 {
+  font-size: 120px;
+  font-weight: 900;
+  color: #3e4449;
+  position: relative;
+}
+
+.resume h1 {
+  font-size: 45px;
+  font-weight: 900;
+  color: var(--white);
+  position: absolute;
+  bottom: 37%;
+  left: 42.3%;
+}
+
+.period-of-time {
+  background-color: var(--green);
+}
+.period-of-time p {
+  font-size: 15px;
+}
+
+.experience {
+  background-color: #111418;
+}
+
 @media screen and (max-width: 767.9px) {
   .home-section {
     height: 70vh;
@@ -196,10 +253,30 @@ a {
     font-size: 35px;
   }
   .about-me-heading h1 {
-    font-size: 60px;
+    font-size: 68px;
   }
   .know-me-more h1 {
-    font-size: 30px;
-    left: 18%;
+    font-size: 20px;
+    left: 25%;
+  }
+  .services-heading h1 {
+    font-size: 75px;
+  }
+
+  .what-i-do h1 {
+    font-size: 35px;
+    left: 25%;
+  }
+
+  .services-content {
+    font-size: 15px;
+  }
+  .summary-heading h1 {
+    font-size: 65px;
+  }
+
+  .resume h1 {
+    font-size: 35px;
+    left: 30%;
   }
 }
