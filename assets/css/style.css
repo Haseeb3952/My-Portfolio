@@ -92,10 +92,11 @@ a {
 
 /* Home Section CSS */
 
-.home {
+.home-section {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 #text {
@@ -117,4 +118,40 @@ a {
 .btn-hire-me:hover {
   background-color: var(--green);
   color: var(--white);
+}
+
+/* About Me CSS */
+
+.about-section {
+  background-color: #212529;
+}
+
+.about-me-heading h1 {
+  font-size: 140px;
+  font-weight: 900;
+  color: #282d31;
+  position: relative;
+}
+
+.know-me-more h1 {
+  font-size: 35px;
+  font-weight: 900;
+  color: var(--white);
+  position: absolute;
+  bottom: 37%;
+  left: 40%;
+}
+
+.green-text {
+  color: var(--green);
+}
+
+.about-me-para {
+  color: hsla(0, 0%, 100%, 0.5) !important;
+}
+
+@media screen and (max-width: 767.9px) {
+  #text {
+    font-size: 25px;
+  }
 }

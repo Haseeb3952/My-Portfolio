@@ -7,7 +7,7 @@ $(document).ready(function () {
 var textElem = document.getElementById("text");
 var textArray = [
   "I'm Abdul Haseeb.",
-  "I'm Front End Web Developer.",
+  "I'm Web Developer.",
   "I'm a Freelancer.",
 ];
 var currentText = 0;
