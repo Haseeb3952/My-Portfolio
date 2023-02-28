@@ -8,6 +8,7 @@ body {
   margin: 0%;
   padding: 0%;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -41,6 +42,7 @@ a {
   color: var(--dark);
   transition: 0.4s;
 }
+
 .nav-links ul li a:hover {
   color: var(--green);
 }
@@ -51,6 +53,14 @@ a {
   background-color: #111418;
 }
 
+.side-navbar {
+  height: 100vh;
+}
+
+.scroll-div {
+  height: 100vh;
+  overflow: auto;
+}
 .social a i {
   color: var(--dark);
   font-size: 20px;
@@ -79,19 +89,17 @@ a {
 
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #ebebeb;
+  background-color: #fafafa;
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  background: #6d6d6d;
+  background: #20c997;
 }
 
 /* Home Section CSS */
@@ -102,12 +110,8 @@ a {
   align-items: center;
   height: 100vh;
 
-  background: linear-gradient(
-      84deg,
-      rgb(17, 29, 39, 0.35),
-      rgba(10, 98, 221, 0.58)
-    ),
-    url("/assets/images/hero-bg-3.jpeg");
+  background: linear-gradient(84deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("/assets/images/hero-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.8;
@@ -237,6 +241,7 @@ a {
 .period-of-time {
   background-color: var(--green);
 }
+
 .period-of-time p {
   font-size: 15px;
 }
@@ -292,30 +297,96 @@ a {
   background-color: var(--green);
   width: 60%;
 }
+
 .btn-cv {
   border: 2px solid hsla(0, 0%, 100%, 0.5);
   transition: 0.4s;
 }
+
 .btn-cv:hover {
   background-color: #6c757d !important;
   border: 2px solid #6c757d;
   color: var(--white) !important;
 }
 
+/* portfolio-section CSS */
+
+.portfolio-section {
+  background-color: #343a40;
+  max-height: max-content;
+}
+
+.portfolio-heading h1 {
+  font-size: 150px;
+  font-weight: 900;
+  color: #3e4449;
+  position: relative;
+}
+
+.my-work h1 {
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--white);
+  position: absolute;
+  bottom: 39%;
+  left: 39.6%;
+}
+
+/* Nav Tabs */
+
+.project-01 img {
+  border-radius: 7px;
+}
+
+.project img {
+  transition: 0.5s;
+}
+
+.project-01:hover .project img {
+  transform: scale(1.01);
+}
+
+.my-projects {
+  overflow: hidden;
+}
+
+.nav-pills .nav-link {
+  background: 0 0;
+  border: 0;
+  border-radius: 0.25rem;
+  color: var(--white);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: transparent !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link :active {
+  color: var(--green);
+  border-bottom: 2px solid #1baa80;
+}
+
 @media screen and (max-width: 767.9px) {
   .home-section {
     height: 70vh;
   }
+
   #text {
     font-size: 35px;
   }
+
   .about-me-heading h1 {
     font-size: 68px;
   }
+
   .know-me-more h1 {
     font-size: 20px;
     left: 25%;
   }
+
   .services-heading h1 {
     font-size: 75px;
   }
@@ -328,6 +399,7 @@ a {
   .services-content {
     font-size: 15px;
   }
+
   .summary-heading h1 {
     font-size: 65px;
   }
