@@ -245,6 +245,63 @@ a {
   background-color: #111418;
 }
 
+.skills-line {
+  background-color: #000;
+  height: 9px;
+  position: relative;
+}
+
+.skills-green-line {
+  position: absolute;
+  height: 9px;
+  background-color: var(--green);
+  width: 65%;
+}
+
+.html-green-line {
+  position: absolute;
+  height: 9px;
+  background-color: var(--green);
+  width: 90%;
+}
+
+.bootstrap-skill-line {
+  position: absolute;
+  height: 9px;
+  background-color: var(--green);
+  width: 95%;
+}
+
+.js-skill-line {
+  position: absolute;
+  height: 9px;
+  background-color: var(--green);
+  width: 80%;
+}
+
+.react-skill-line {
+  position: absolute;
+  height: 9px;
+  background-color: var(--green);
+  width: 75%;
+}
+
+.angular-skill-line {
+  position: absolute;
+  height: 9px;
+  background-color: var(--green);
+  width: 60%;
+}
+.btn-cv {
+  border: 2px solid hsla(0, 0%, 100%, 0.5);
+  transition: 0.4s;
+}
+.btn-cv:hover {
+  background-color: #6c757d !important;
+  border: 2px solid #6c757d;
+  color: var(--white) !important;
+}
+
 @media screen and (max-width: 767.9px) {
   .home-section {
     height: 70vh;
