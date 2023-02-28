@@ -408,4 +408,12 @@ a {
     font-size: 35px;
     left: 30%;
   }
+  .portfolio-heading h1 {
+    font-size: 65px;
+  }
+
+  .my-work h1 {
+    font-size: 35px;
+    left: 30%;
+  }
 }
