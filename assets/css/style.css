@@ -540,12 +540,11 @@ textarea:focus {
     left: 30%;
   }
   .portfolio-heading h1 {
-    font-size: 65px;
+    font-size: 60px;
   }
-
   .my-work h1 {
-    font-size: 35px;
-    left: 30%;
+    font-size: 30px;
+    left: 31%;
   }
   .testimonial-heading h1 {
     font-size: 50px;
