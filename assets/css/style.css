@@ -140,24 +140,27 @@ a {
   color: var(--white);
 }
 
-#btn-top {
-  display: none;
+#go-top-btn {
   position: fixed;
   bottom: 20px;
-  right: 20px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: #555;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
+  right: 25px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
+  border: none;
+  background-color: var(--blue-color);
+  transition: 0.4s !important;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  z-index: 99;
 }
 
-#btn-top:hover {
-  background-color: #333;
+#go-top-btn i {
+  color: #fff;
+  font-size: 25px;
 }
 
 /* About Me CSS */
@@ -587,22 +590,3 @@ textarea:focus {
 }
 
 /************************************************* Tablet View ********************************************/
-
-@media screen and (max-width: 991.9px) {
-  .about-me-heading h1 {
-    font-size: 100px;
-  }
-  .know-me-more h1 {
-    font-size: 35px;
-  }
-  .portfolio-heading h1 {
-    font-size: 100px;
-  }
-  .testimonial-heading h1 {
-    font-size: 100px;
-  }
-  .client-speak h1 {
-    font-size: 40px;
-    left: 33%;
-  }
-}
