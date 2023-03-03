@@ -1595,36 +1595,39 @@
                         action="https://formspree.io/f/xbjeyozp"
                         method="POST"
                       >
-                        <div class="row gy-3">
+                        <div class="row">
                           <div class="col-12 col-md-6">
-                            <input
-                              type="text"
-                              placeholder="Name"
-                              class="py-3 form-control rounded"
-                              required
-                              name="attribute"
-                            />
+                            <div class="mb-3">
+                              <input
+                                type="text"
+                                class="form-control py-3 text-white"
+                                id="name"
+                                name="name"
+                                required
+                                aria-describedby="emailHelp" placeholder="Name"
+                              />
+                            </div>
                           </div>
-                          <div class="col-12 col-md-6">
-                            <input
-                              type="email"
-                              placeholder="Email"
-                              class="py-3 form-control rounded"
-                              required
-                              name="attribute"
-                            />
-                          </div>
-                          <div class="col-12 m-0">
+                            <div class="col-12 col-md-6">
+                              <input
+                                type="email"
+                                class="form-control py-3 text-white"
+                                id="email"
+                                name="email"
+                                required
+                                aria-describedby="emailHelp" placeholder="Email"
+                              />
+                            </div>
+                             
+                           
+                           <div class="col-12 mb-3">
                             <textarea
-                              name=""
-                              id=""
-                              cols="30"
-                              rows="6"
-                              placeholder="Tell us more about your needs........"
-                              class="form-control my-4 py-3"
-                              required
-                              name="attribute"
-                            ></textarea>
+                            name="subject"
+                            class="form-control py-3"
+                            id="subject"
+                            rows="6" placeholder="Tell us more about your needs....."
+                          ></textarea>
+                           </div>
                           </div>
                           <div class="text-center">
                             <button
