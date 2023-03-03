@@ -683,11 +683,4 @@ textarea:focus {
   ::-webkit-scrollbar {
     width: 0px;
   }
-  .side-navbar {
-    height: max-content;
-  }
-  .side_bar {
-    min-height: 90vh !important;
-    overflow-y: auto;
-  }
 }
