@@ -686,4 +686,8 @@ textarea:focus {
   .side-navbar {
     height: max-content;
   }
+  .side_bar {
+    min-height: 90vh !important;
+    overflow-y: auto;
+  }
 }
