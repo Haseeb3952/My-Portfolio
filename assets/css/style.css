@@ -61,6 +61,7 @@ a {
   height: 100vh;
   overflow: auto;
 }
+
 .social a i {
   color: var(--dark);
   font-size: 20px;
@@ -183,6 +184,10 @@ a {
   position: absolute;
   bottom: 40%;
   left: 34%;
+}
+
+.border-right {
+  border-right: 1px solid #20c997;
 }
 
 .green-text {
@@ -400,6 +405,7 @@ a {
   color: #282d31;
   position: relative;
 }
+
 /* 
 .green-line {
   position: relative;
@@ -523,6 +529,85 @@ textarea:focus {
   background-color: #212529;
 }
 
+.btn-offcanvas {
+  display: none;
+}
+
+.mobile-view {
+  display: none;
+}
+
+.closing_button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.btn-close-tab {
+  background-color: #111418;
+}
+
+.btn-close-ph {
+  background-color: #000;
+}
+
+/************************************************* Tablet View ********************************************/
+
+@media screen and (max-width: 1023.9px) {
+  .my_profile {
+    display: none;
+  }
+
+  .btn-offcanvas {
+    display: block;
+  }
+
+  .about-me-heading h1 {
+    font-size: 133px;
+  }
+
+  .know-me-more h1 {
+    font-size: 53px;
+    left: 25%;
+    margin: 0%;
+  }
+  .portfolio-heading h1 {
+    font-size: 130px;
+  }
+
+  .what-i-do h1 {
+    font-size: 50px;
+    left: 30%;
+  }
+  .resume h1 {
+    font-size: 55px;
+    left: 35%;
+  }
+
+  .my-work h1 {
+    font-size: 70px;
+    left: 31%;
+    margin: 0%;
+  }
+
+  .testimonial-heading h1 {
+    font-size: 110px;
+  }
+  .client-speak h1 {
+    font-size: 45px;
+    left: 32%;
+  }
+
+  .get-in-touch h1 {
+    font-size: 55px;
+    left: 30%;
+  }
+  .mobile-view {
+    display: block;
+    background-color: #000;
+  }
+}
+
 /************************************************* Mobile View ********************************************/
 
 @media screen and (max-width: 767.9px) {
@@ -535,58 +620,67 @@ textarea:focus {
   }
 
   .about-me-heading h1 {
-    font-size: 63px;
+    font-size: 53px !important;
   }
 
   .know-me-more h1 {
-    font-size: 23px;
-    left: 25%;
+    font-size: 23px !important;
+    left: 25%m !important;
   }
 
   .services-heading h1 {
-    font-size: 65px;
+    font-size: 65px !important;
   }
 
   .what-i-do h1 {
-    font-size: 30px;
-    left: 26%;
+    font-size: 30px !important;
+    left: 26% !important;
+  }
+
+  .border-right {
+    border-right: none;
   }
 
   .services-content {
-    font-size: 15px;
+    font-size: 15px !important;
   }
 
   .summary-heading h1 {
-    font-size: 65px;
+    font-size: 65px !important;
   }
 
   .resume h1 {
-    font-size: 35px;
-    left: 30%;
+    font-size: 35px !important;
+    left: 30% !important;
   }
+
   .portfolio-heading h1 {
-    font-size: 60px;
+    font-size: 60px !important;
   }
+
   .my-work h1 {
-    font-size: 30px;
-    left: 31%;
+    font-size: 30px !important;
+    left: 31% !important;
   }
+
   .testimonial-heading h1 {
-    font-size: 50px;
+    font-size: 50px !important;
   }
 
   .client-speak h1 {
-    font-size: 25px;
-    left: 28%;
+    font-size: 25px !important;
+    left: 28% !important;
   }
+
   .contact-heading h1 {
-    font-size: 60px;
+    font-size: 60px !important;
   }
 
   .get-in-touch h1 {
-    font-size: 25px;
-    left: 30%;
+    font-size: 25px !important;
+    left: 30% !important;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
   }
 }
-
-/************************************************* Tablet View ********************************************/
