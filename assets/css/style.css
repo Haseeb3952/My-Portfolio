@@ -683,4 +683,7 @@ textarea:focus {
   ::-webkit-scrollbar {
     width: 0px;
   }
+  .side_bar {
+    max-height: max-content;
+  }
 }
