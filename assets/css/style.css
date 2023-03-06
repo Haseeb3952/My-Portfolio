@@ -373,6 +373,22 @@ a {
   overflow: hidden;
 }
 
+.project_title {
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.4s;
+}
+
+.project-01:hover .project_title {
+  opacity: 1;
+}
+
+.project-01:hover .project img {
+  opacity: 0.1;
+}
+
 .nav-pills .nav-link {
   background: 0 0;
   border: 0;
@@ -444,6 +460,11 @@ a {
 .testimonial-photo {
   height: 70px;
   width: 70px;
+}
+
+.test-name {
+  display: grid;
+  grid-template-columns: 70px auto;
 }
 
 .testimonial-photo img {
@@ -613,6 +634,9 @@ textarea.form-control {
   .mobile-view {
     display: block;
     background-color: #000;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
   }
 }
 
