@@ -283,7 +283,7 @@ a {
   position: absolute;
   height: 9px;
   background-color: var(--green);
-  width: 65%;
+  width: 95%;
 }
 
 .html-green-line {
@@ -297,21 +297,21 @@ a {
   position: absolute;
   height: 9px;
   background-color: var(--green);
-  width: 95%;
+  width: 98%;
 }
 
 .js-skill-line {
   position: absolute;
   height: 9px;
   background-color: var(--green);
-  width: 80%;
+  width: 85%;
 }
 
 .react-skill-line {
   position: absolute;
   height: 9px;
   background-color: var(--green);
-  width: 75%;
+  width: 80%;
 }
 
 .angular-skill-line {
